@@ -1,0 +1,22 @@
+.details{
+    border: 1px solid grey;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+a{
+    text-decoration: none;
+    color: none;
+}
+.card{
+    background-color: 2px solid red !important;
+}
+.proposalBtn{
+    text-align: right;
+}
+.card-body i,h5,p{
+    display: inline !important;
+    margin: 7px !important;
+}
+/* .card-header h3{
+    gap: 100% !important;
+} */

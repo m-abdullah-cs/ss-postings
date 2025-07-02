@@ -1,0 +1,15 @@
+.card-body .card-title{
+    font-size: 23px !important;
+    font-weight: 600 !important;
+    color: black !important;
+}
+.card-body .card-text{
+    font-size: 23px !important;
+    
+    color: black !important;
+}
+.card-body .badge{
+    font-size: 23px !important;
+    margin-top: 1px;
+    color: white !important;
+}

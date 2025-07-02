@@ -1,0 +1,23 @@
+form{
+    border: 1px solid black;
+    margin-top: 20px;
+    padding-top: 5px;
+    padding: 20px;
+    
+ }
+ .fields input,select{
+     border-radius: 0px !important;
+     border: 0.5px solid black !important;
+ }
+ .fields{
+     display: flex;
+ }   
+ /* .icon i{
+     width: 1% !important;
+ } */
+ .icon{
+     border: 0.5px solid black;
+     width: 10%;
+ 
+ }
+ 

@@ -1,0 +1,9 @@
+.sender_picture {
+    width: 43px;
+    height: 42px;
+    border-radius: 23px;
+}
+.my_msg{
+    display: flex;
+    gap: 3px;
+}

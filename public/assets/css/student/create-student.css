@@ -1,0 +1,11 @@
+#myform{
+    border-radius: 5px;
+    background-color: beige;
+    border: 1px solid grey;
+}
+label{
+    font-size: 19px;
+}
+input{
+    border: 0.5px solid black !important;
+}

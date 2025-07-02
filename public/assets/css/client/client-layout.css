@@ -1,0 +1,100 @@
+.user-panel .image img{
+    width: 57px;
+}
+trix-editor ul,
+trix-editor ol{
+    margin-left: 1.5rem;
+    padding-left: 1.5rem;
+}
+.alert-success ul,
+.alert-success ol{
+    margin-left: 1.5rem;
+    padding-left: 1.5rem;
+}
+.alert-secondary ul,
+.alert-secondary ol{
+    margin-left: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+trix-editor ul {
+    list-style-type: disc;
+}
+.alert-success ul {
+    list-style-type: disc;
+}
+.alert-secondary ul {
+    list-style-type: disc;
+}
+
+trix-editor ol {
+    list-style-type: decimal;
+}
+.alert-success ol {
+    list-style-type: decimal;
+}
+.alert-secondary ol {
+    list-style-type: decimal;
+}
+trix-editor code, 
+trix-editor pre {
+    background-color: #b0b0b0;
+    color: white;
+    padding: 2px 4px;
+    font-family: monospace;
+    font-size: 0.95em;
+    border-radius: 4px;
+}
+.alert-success code,
+.alert-success pre {
+    background-color: #b0b0b0;
+    color: white;
+    padding: 2px 4px;
+    font-family: monospace;
+    font-size: 0.95em;
+    border-radius: 4px;
+}
+.alert-secondary code,
+.alert-secondary pre {
+    background-color: #b0b0b0;
+    color: white;
+    padding: 2px 4px;
+    font-family: monospace;
+    font-size: 0.95em;
+    border-radius: 4px;
+}
+.alert-success blockquote,
+.alert-success blockquote {
+    background-color: white;
+    color: black;
+    padding: 2px 4px;
+    font-family: monospace;
+    font-size: 0.95em;
+}
+.alert-secondary blockquote,
+.alert-secondary blockquote {
+    background-color: white;
+    color: black;
+    padding: 2px 4px;
+    font-family: monospace;
+    font-size: 0.95em;
+}
+/* ---------------  Loading Picture------------- */
+
+#loader-wrapper {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: white;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+#loader {
+    width: 80px;
+    height: 80px;
+    animation: spin 1.5s linear infinite;
+}
