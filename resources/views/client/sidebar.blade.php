@@ -5,9 +5,10 @@
       <!-- Sidebar user panel (optional) -->
       <div class="user-panel d-flex mb-2 mt-2">
         <div class="image">
-          {{-- <img src="{{asset('assets/images/default.jpg')}}" class="img-circle elevation-2" alt="User Image"> --}}
+         <!-- <img src="{{asset('assets/images/default.jpg')}}" class="img-circle elevation-2" alt="User Image">  -->
           <img src="{{$profile ? asset('storage/assets/profiles/'. $profile->picture) : asset('assets/images/default.jpg')}}" class="img-circle elevation-2" alt="User Image">
         </div>
+        <!--   -->
         <div class="info align-items-center d-flex">
           <a href="#" class="d-block">{{($user) ?  $user->name : ''}}</a>
         </div>

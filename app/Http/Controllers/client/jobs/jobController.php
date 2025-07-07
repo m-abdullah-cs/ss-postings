@@ -24,9 +24,8 @@ class jobController extends Controller
                 ];
             });
             $jobs[] = $formattedjob;
+           
         }
-
-        
         return view('client.jobs.list', compact('jobs', 'profile', 'user'));
     }
 
