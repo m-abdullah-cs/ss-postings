@@ -22,6 +22,7 @@ class SendMessageEvent implements ShouldBroadcastNow
      */
     public function __construct($message)
     {
+        // dd($message);
         $this->message = $message;
     }
 
@@ -32,9 +33,10 @@ class SendMessageEvent implements ShouldBroadcastNow
      */
     public function broadcastOn(): array
     {
+        // dd("broadcst on");
         return [
             new PrivateChannel('chat-channel.'. $this->message->receiver_id),
-             new PrivateChannel('private-notification.'. $this->message->receiver_id),
+            //  new PrivateChannel('private-notification.'. $this->message->receiver_id),
         ];
     }
 

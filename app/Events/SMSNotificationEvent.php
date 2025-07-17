@@ -21,6 +21,7 @@ class SMSNotificationEvent implements ShouldBroadcastNow
      */
     public function __construct($message)
     {
+        // dd($message);
         $this->message = $message;
         // dd("constructor");
     }

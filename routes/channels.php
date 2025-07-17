@@ -7,7 +7,8 @@ Broadcast::channel('App.Models.User.{id}', function ($user, $id) {
     return (int) $user->id === (int) $id;
 });
 
-Broadcast::channel('chat-channel.{sender_id}', function(User $user, $user_id){
+Broadcast::channel('chat-channel.{user_id}', function(User $user, $user_id){
+
     return (int) $user->id === (int) $user_id;
 });
 

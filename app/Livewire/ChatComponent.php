@@ -64,14 +64,20 @@ class ChatComponent extends Component
         $this->appendMessage($chatMessage);
         broadcast(new SendMessageEvent($chatMessage))->toOthers();
 
-        broadcast(new SMSNotificationEvent($chatMessage));
+        // broadcast(new SMSNotificationEvent($chatMessage));
 
         $this->message = '';
         
     }
 
+public function getListeners()
+{
+    return [
+        "echo-private:chat-channel." . Auth::id() . ",SendMessageEvent" => 'listenForMessage',
+    ];
+}
 
-    #[On('echo-private:chat-channel.{sender_id},SendMessageEvent')]
+    // #[On('echo-private:chat-channel.{receiver_id},SendMessageEvent')]
     public function listenForMessage($event){
         $chatMessage = Message::whereId($event['message']['id'])->with('sender:id,name', 'receiver:id,name')->first();
         $this->appendMessage($chatMessage);
