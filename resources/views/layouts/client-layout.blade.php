@@ -81,7 +81,8 @@
           </form>
         </div>
       </li>
-
+        <div class="form">
+        </div>
       @livewire('notification-component')
       {{-- <livewire:notification-component /> --}}
       
