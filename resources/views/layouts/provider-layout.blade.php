@@ -89,8 +89,8 @@
       </li>
 
 
-      
-      <livewire:notification-component />
+      @livewire('notification-component')
+      {{-- <livewire:notification-component /> --}}
       {{-- <livewire:notification-component :unseen="$unseen" /> --}}
       <li class="nav-item">
         <a href="{{route('logout')}}" class="nav-link">
